@@ -1,0 +1,228 @@
+:root {
+    --dark: #ccbe00;
+    --fl: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: var(--dark);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 3px 10px #090909;
+    z-index: 999;
+}
+
+nav a {
+    color: var(--fl);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out;
+    font-size: 22px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    opacity: 1;
+    /* text-decoration: underline; */
+    transform: scale(1.1);
+    text-shadow: 0px 3px 10px var(--fl);
+}
+
+.s1 {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.imgSide {
+    width: 300px;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 10px #090909;
+}
+
+.imgSide img {
+    width: 300px;
+    height: 300px;
+    transition: all 200ms linear;
+    filter: grayscale(1);
+}
+
+.imgSide img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.textSide {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textSide h1 {
+    font-size: 48px;
+    text-align: left;
+    width: 100%;
+}
+
+.textSide p {
+    font-size: 22px;
+}
+
+.s2 {
+    min-height: 100vh;
+    height: auto;
+    background-image: url('./images/bg.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card{
+    background-color: var(--fl);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.s3 {
+    min-height: 100vh;
+    height: auto;
+}
+
+.s4 {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid var(--dark);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 10px var(--dark);
+    width: 300px;
+}
+
+.formulario label{
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.formulario textarea{
+    width: 100%;
+    min-width: 255px;
+    max-width: 255px;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--dark);
+    transition: all 200ms ;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--fl);
+    box-shadow: 0px 3px 10px var(--dark);
+}
+
+footer{
+    background-color: var(--dark);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a{
+    color: var(--fl);
+    text-decoration: none;
+    font-size: 38px;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out;
+}
+
+footer a:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.1);
+    /* text-shadow: 0px 3px 10px var(--fl); */
+}
+
+
+@media (width <= 1000px) {
+    .s1 {
+        min-height: 60vh;
+        padding: 100px 20px 20px 20px;
+    }
+
+    .text-side {
+        height: 300px;
+    }
+
+}
