@@ -107,22 +107,6 @@ nav a:hover {
     padding: 20px;
 }
 
-.card{
-    background-color: var(--fl);
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px #090909;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.card img{
-    width: 100%;
-}
 
 .s3 {
     min-height: 100vh;
